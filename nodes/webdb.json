@@ -1,6 +1,10 @@
 {
+	"nginx": {
+		"port": 80
+	},
 	"run_list":[
 		"recipe[base_packages]",
-		"recipe[nginx]"
+		"recipe[nginx]",
+		"recipe[iptables]"
 	]
 }
